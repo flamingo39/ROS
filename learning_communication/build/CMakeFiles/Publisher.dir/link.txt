@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-g++-7  -g  -rdynamic CMakeFiles/Publisher.dir/src/Publisher.cpp.o  -o devel/lib/learning_communication/Publisher 

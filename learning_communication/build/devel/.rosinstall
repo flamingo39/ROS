@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/flamingo39/catkin_ws/src/learning_communication/build/devel/setup.sh
