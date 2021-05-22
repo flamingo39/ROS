@@ -149,7 +149,11 @@ target_link_libraries(Subscriber ${catkin_LIBRARIES})
 
 add_executable(Server src/Server.cpp)
 target_link_libraries(Server ${catkin_LIBRARIES})
-#add_dependencies(Subscriber ${PROJECT_NAME}_generate_messages_cpp)
+#add_dependencies(Server ${PROJECT_NAME}_generate_messages_cpp)
+
+add_executable(Client src/Client.cpp)
+target_link_libraries(Client ${catkin_LIBRARIES})
+#add_dependencies(Client ${PROJECT_NAME}_generate_messages_cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the

@@ -6,8 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/home/flamingo39/catkin_ws/src/learning_communication/src/Server.cpp
+/home/flamingo39/catkin_ws/src/learning_communication/src/Client.cpp
 ros/ros.h
+-
+cstdlib
 -
 learning_communication/AddTwoInts.h
 -

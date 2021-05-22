@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+learning_communication/CMakeFiles/Client.dir/rule:
+	cd /home/flamingo39/catkin_ws/src/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/Client.dir/rule
+.PHONY : learning_communication/CMakeFiles/Client.dir/rule
+
+# Convenience name for target.
+Client: learning_communication/CMakeFiles/Client.dir/rule
+
+.PHONY : Client
+
+# fast build rule for target.
+Client/fast:
+	cd /home/flamingo39/catkin_ws/src/build && $(MAKE) -f learning_communication/CMakeFiles/Client.dir/build.make learning_communication/CMakeFiles/Client.dir/build
+.PHONY : Client/fast
+
+# Convenience name for target.
 learning_communication/CMakeFiles/Server.dir/rule:
 	cd /home/flamingo39/catkin_ws/src/build && $(MAKE) -f CMakeFiles/Makefile2 learning_communication/CMakeFiles/Server.dir/rule
 .PHONY : learning_communication/CMakeFiles/Server.dir/rule
@@ -782,6 +797,33 @@ learning_communication_generate_messages_nodejs/fast:
 	cd /home/flamingo39/catkin_ws/src/build && $(MAKE) -f learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/build.make learning_communication/CMakeFiles/learning_communication_generate_messages_nodejs.dir/build
 .PHONY : learning_communication_generate_messages_nodejs/fast
 
+src/Client.o: src/Client.cpp.o
+
+.PHONY : src/Client.o
+
+# target to build an object file
+src/Client.cpp.o:
+	cd /home/flamingo39/catkin_ws/src/build && $(MAKE) -f learning_communication/CMakeFiles/Client.dir/build.make learning_communication/CMakeFiles/Client.dir/src/Client.cpp.o
+.PHONY : src/Client.cpp.o
+
+src/Client.i: src/Client.cpp.i
+
+.PHONY : src/Client.i
+
+# target to preprocess a source file
+src/Client.cpp.i:
+	cd /home/flamingo39/catkin_ws/src/build && $(MAKE) -f learning_communication/CMakeFiles/Client.dir/build.make learning_communication/CMakeFiles/Client.dir/src/Client.cpp.i
+.PHONY : src/Client.cpp.i
+
+src/Client.s: src/Client.cpp.s
+
+.PHONY : src/Client.s
+
+# target to generate assembly for a file
+src/Client.cpp.s:
+	cd /home/flamingo39/catkin_ws/src/build && $(MAKE) -f learning_communication/CMakeFiles/Client.dir/build.make learning_communication/CMakeFiles/Client.dir/src/Client.cpp.s
+.PHONY : src/Client.cpp.s
+
 src/Publisher.o: src/Publisher.cpp.o
 
 .PHONY : src/Publisher.o
@@ -874,6 +916,7 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... test"
+	@echo "... Client"
 	@echo "... Server"
 	@echo "... learning_communication_generate_messages_py"
 	@echo "... std_msgs_generate_messages_py"
@@ -917,6 +960,9 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... learning_communication_generate_messages_nodejs"
+	@echo "... src/Client.o"
+	@echo "... src/Client.i"
+	@echo "... src/Client.s"
 	@echo "... src/Publisher.o"
 	@echo "... src/Publisher.i"
 	@echo "... src/Publisher.s"
