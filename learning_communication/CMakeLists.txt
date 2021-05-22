@@ -11,6 +11,9 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  message_generation
+  actionlib_msgs
+  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -52,13 +55,15 @@ find_package(catkin REQUIRED COMPONENTS
 #   Message1.msg
 #   Message2.msg
 # )
+add_message_files(FILES Person.msg)
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
+ add_service_files(
+  FILES
+  AddTwoInts.srv
 #   Service1.srv
 #   Service2.srv
-# )
+ )
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -72,7 +77,7 @@ find_package(catkin REQUIRED COMPONENTS
 #   DEPENDENCIES
 #   std_msgs
 # )
-
+generate_messages(DEPENDENCIES std_msgs actionlib_msgs)
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
 ################################################
@@ -105,7 +110,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES learning_communication
-#  CATKIN_DEPENDS roscpp rospy std_msgs
+  CATKIN_DEPENDS roscpp rospy std_msgs message_runtime message_runtime
 #  DEPENDS system_lib
 )
 
@@ -140,6 +145,10 @@ target_link_libraries(Publisher ${catkin_LIBRARIES})
 
 add_executable(Subscriber src/Subscriber.cpp)
 target_link_libraries(Subscriber ${catkin_LIBRARIES})
+#add_dependencies(Subscriber ${PROJECT_NAME}_generate_messages_cpp)
+
+add_executable(Server src/Server.cpp)
+target_link_libraries(Server ${catkin_LIBRARIES})
 #add_dependencies(Subscriber ${PROJECT_NAME}_generate_messages_cpp)
 
 ## Rename C++ executable without prefix

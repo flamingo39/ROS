@@ -36,12 +36,17 @@
 },
 {
   "directory": "/home/flamingo39/catkin_ws/src/build/learning_communication",
-  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_communication\\\" -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/Subscriber.dir/src/Subscriber.cpp.o -c /home/flamingo39/catkin_ws/src/learning_communication/src/Subscriber.cpp",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_communication\\\" -I/home/flamingo39/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/Server.dir/src/Server.cpp.o -c /home/flamingo39/catkin_ws/src/learning_communication/src/Server.cpp",
+  "file": "/home/flamingo39/catkin_ws/src/learning_communication/src/Server.cpp"
+},
+{
+  "directory": "/home/flamingo39/catkin_ws/src/build/learning_communication",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_communication\\\" -I/home/flamingo39/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/Subscriber.dir/src/Subscriber.cpp.o -c /home/flamingo39/catkin_ws/src/learning_communication/src/Subscriber.cpp",
   "file": "/home/flamingo39/catkin_ws/src/learning_communication/src/Subscriber.cpp"
 },
 {
   "directory": "/home/flamingo39/catkin_ws/src/build/learning_communication",
-  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_communication\\\" -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/Publisher.dir/src/Publisher.cpp.o -c /home/flamingo39/catkin_ws/src/learning_communication/src/Publisher.cpp",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_communication\\\" -I/home/flamingo39/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/Publisher.dir/src/Publisher.cpp.o -c /home/flamingo39/catkin_ws/src/learning_communication/src/Publisher.cpp",
   "file": "/home/flamingo39/catkin_ws/src/learning_communication/src/Publisher.cpp"
 }
 ]
